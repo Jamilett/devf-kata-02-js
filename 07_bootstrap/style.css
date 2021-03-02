@@ -1,0 +1,51 @@
+body {
+    background-color: #000000a4;
+}
+
+.my-nav {
+    background-color: #eae9eb!important;
+}
+
+.my-nav:hover {
+    background-color: gainsboro !important;
+}
+
+.my-nav-brand {
+    color: #000000!important;
+    font-weight: bolder;
+}
+
+.my-search {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.my-search:hover {
+    background-color: gray;
+    color: white;
+    border: none;
+}
+
+section {
+    background-color: black;
+}
+
+.my-img {
+    height: 500px;
+}
+
+.my-logo {
+    height: 50px;
+    width: 50px;
+}
+
+.my-name {
+    margin-left: 10px;
+}
+
+.my-instagram {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}

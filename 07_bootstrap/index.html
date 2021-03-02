@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B From</title>
+    <!-- Links de Bootstrap a CSS (Para sobrescribir se pone después de Bootstrap) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Links de Bootstrap a JScript (Para sobrescribir se pone antes de Bootstrap)-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="col-12 col-md-12 navbar navbar-expand-lg navbar-light bg-light my-nav">
+            <!-- Imágen Logo -->
+            <img src="C:\Users\jamsr\Desktop\Master_3\02_Kata_JS\07_Bootstrap\logo.png" class="rounded-circle rounded float-left my-logo" alt="logo">
+            <a class="navbar-brand my-nav-brand my-name" href="#">B.From</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    T-Shirts
+                  </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Developer</a>
+                            <a class="dropdown-item" href="#">Mexican Engineer</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a class="dropdown-item" href="#">Mexican Architect</a>
+                            <a class="dropdown-item" href="#">Mexican Traveler</a>
+                            <a class="dropdown-item" href="#">Mexican Graphic Designer</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <a href="https://www.instagram.com/b.from.mx/" target="_blank">
+                        <img src="data:image/png;base64,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"
+                            class="rounded-circle rounded float-left my-instagram" alt="instagram"> </a>
+                    <input class="form-control mr-sm-2" type="search" placeholder="Busca tu playera..." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0 my-search" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Carrusel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="C:\Users\jamsr\Desktop\Master_3\02_Kata_JS\07_Bootstrap\portada.png" class="d-block w-100 my-img" alt="portada">
+                </div>
+                <div class="carousel-item">
+                    <img src="C:\Users\jamsr\Desktop\Master_3\02_Kata_JS\07_Bootstrap\merch.png" class="w-100 my-img" alt="merch"> </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </main>
+    <section>
+        <!-- Cards -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="C:\Users\jamsr\Desktop\Master_3\02_Kata_JS\07_Bootstrap\developer.jpg" class="card-img-top" alt="developer">
+                    <div class="card-body">
+                        <h5 class="card-title">Developer T-Shirt $350.00 MXN</h5>
+                        <p class="card-text">Playera 50% algodón y 50% poliester, confeccionada y diseñada por Mexicanos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="C:\Users\jamsr\Desktop\Master_3\02_Kata_JS\07_Bootstrap\engineer.jpg" class="card-img-top" alt="engineer">
+                    <div class="card-body">
+                        <h5 class="card-title">Engineer T-Shirt $350.00 MXN</h5>
+                        <p class="card-text">Playera 50% algodón y 50% poliester, confeccionada y diseñada por Mexicanos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="C:\Users\jamsr\Desktop\Master_3\02_Kata_JS\07_Bootstrap\traveler.jpg" class="card-img-top" alt="traveler">
+                    <div class="card-body">
+                        <h5 class="card-title">Traveler T-Shirt $350.00 MXN</h5>
+                        <p class="card-text">Playera 50% algodón y 50% poliester, confeccionada y diseñada por Mexicanos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="C:\Users\jamsr\Desktop\Master_3\02_Kata_JS\07_Bootstrap\graphic.jpg" class="card-img-top" alt="traveler">
+                    <div class="card-body">
+                        <h5 class="card-title">Designer T-Shirt $350.00 MXN</h5>
+                        <p class="card-text">Playera 50% algodón y 50% poliester, confeccionada y diseñada por Mexicanos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="C:\Users\jamsr\Desktop\Master_3\02_Kata_JS\07_Bootstrap\architect.jpg" class="card-img-top" alt="traveler">
+                    <div class="card-body">
+                        <h5 class="card-title">Architect T-Shirt $350.00 MXN</h5>
+                        <p class="card-text">Playera 50% algodón y 50% poliester, confeccionada y diseñada por Mexicanos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="C:\Users\jamsr\Desktop\Master_3\02_Kata_JS\07_Bootstrap\punto.jpg" class="card-img-top" alt="traveler">
+                    <div class="card-body">
+                        <h5 class="card-title">Punto T-Shirt $350.00 MXN</h5>
+                        <p class="card-text">Playera 50% algodón y 50% poliester, confeccionada y diseñada por Mexicanos</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

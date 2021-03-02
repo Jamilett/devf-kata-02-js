@@ -1,0 +1,43 @@
+// Juego Piedra, Papel o Tijera
+// Proposito: Comparar las 3 posibles diferentes opciones que elija el usuario vs una opción random generada por la computadora e identificar la opcion ganadora 
+
+PROCESO Juego_PPT
+DEFINIR opcionUsuario, opcionRandom NUMBER;
+opcionUsuario > 3;
+opcionRandom > azar(3) + 1;
+
+ESCRIBIR "Elige una opción: Piedra = 1, Papel = 2, Tijera = 3" PROMPT;
+LEER opcionUsuario;
+CONVERTIR opcionUsuario a NUMBER;
+
+INICIO SI (opcionUsuario === Piedra){
+	SI (opcionRandom === Piedra){
+	ESCRIBIR "¡Empate!";
+	} 	SI NO (opcionRandom === Papel){ 
+		ESCRIBIR "¡Perdiste!";
+	}	SI NO (opcionRandom === Tijera){ 
+		ESCRIBIR "¡Ganaste!";
+	} 
+} SI NO (opcionUsuario === Papel){
+	SI (opcionRandom === Piedra){
+	ESCRIBIR "¡Ganaste!";
+	} 	SI NO (opcionRandom === Papel){ 
+		ESCRIBIR "¡Empate!";
+	}	SI NO (opcionRandom === Tijera){ 
+		ESCRIBIR "¡Perdiste!";
+	} 
+} SI NO (opcionUsuario === Tijera){
+	SI (opcionRandom === Piedra){
+	ESCRIBIR "¡Perdiste!";
+	} 	SI NO (opcionRandom === Papel){ 
+		ESCRIBIR "¡Ganaste!";
+	}	SI NO (opcionRandom === Tijera){ 
+		ESCRIBIR "¡Empate!";
+	} 
+} SI NO {
+	ESCRIBIR ("ERROR: Ingresa un número válido")
+}
+FIN SI
+
+FIN PROCESO
+

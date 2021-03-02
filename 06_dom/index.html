@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <input type="button" onclick="saludar()" name="ok" value="dame click y te saludo :D">
+
+    <!-- Id se llamará a llamar en el main (funcionalidad EventListener) -->
+
+    <div id="divSum">
+        <div>
+            <label for="num1">Number 1:  </label>
+            <input type="number" id="num1">
+        </div>
+        <div>
+            <label for="num2">Number 2:  </label>
+            <input type="number" id="num2">
+        </div>
+        <p> Click the button </p>
+        <button id="btnSumar">Suma</button>
+        <p>
+            Resultado: <label id="resultado"></label>
+        </p>
+    </div>
+
+    <!-- OnCLick manda llamar la función del main  -->
+
+    <div id="divOperations">
+        <input type="button" onclick="sumar()" value="Suma cualquier número">
+        <input type="button" onclick="squareArea()" value="Área Cuadrado">
+        <input type="button" onclick="rectangleArea()" value="Área Rectángulo">
+        <input type="button" onclick="triangleArea()" value="Área Triángulo">
+    </div>
+
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

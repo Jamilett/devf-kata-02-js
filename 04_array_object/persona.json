@@ -1,0 +1,42 @@
+[{
+        "nombre": "Ana",
+        "edad": 22,
+        "cel": "56727887",
+        "musica": {
+            "rock": "Kiss",
+            "pop": "Miley",
+            "indie": {
+                "alternativo": "Tame Impala"
+            }
+        },
+        "peliculas": ["RF1", "RF2", "RF3"]
+    },
+
+    {
+        "nombre": "Andres",
+        "edad": 26,
+        "cel": "56727887",
+        "musica": {
+            "rock": "Kiss",
+            "pop": "Miley",
+            "indie": {
+                "alternativo": "Tame Impala"
+            }
+        },
+        "peliculas": ["RF1", "RF2", "RF3"]
+    },
+
+    {
+        "nombre": "Jam",
+        "edad": 27,
+        "cel": "56727887",
+        "musica": {
+            "rock": "Kiss",
+            "pop": "Miley",
+            "indie": {
+                "alternativo": "Tame Impala"
+            }
+        },
+        "peliculas": ["RF1", "RF2", "RF3"]
+    }
+]
